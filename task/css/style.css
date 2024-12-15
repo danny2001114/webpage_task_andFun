@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #138169;
+  --second: #073e32;
+  --font-color-1: #000;
+  --font-color-2: #fff;
+  --form-font: #858484;
+  --blank: transparent;
+  --line-color: #e2e1e1;
+}
+
+/* common */
+.flx-row,
+.flx-col {
+  display: flex;
+}
+
+.flx-col {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  width: max-content;
+  color: var(--font-color-1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--primary);
+  color: var(--font-color-2);
+}
+
+.btn2 {
+  padding: 5px 10px;
+  border: 2px solid var(--primary);
+  color: var(--font-color-2);
+}
+
+.ttl {
+  font-size: 25px;
+}
+
+.sub-ttl {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* main */
+body {
+  color: var(--font-color);
+  font-family: sans-serif;
+  font-size: 15px;
+  text-size-adjust: 100%;
+}
+
+.wpr {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* header */
+header {
+  padding: 20px 0;
+}
+
+header .container {
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.main-nav ul {
+  gap: 20px;
+}
+
+/* banner */
+.bnr {
+  padding: 100px 0;
+  background: url(../img/bnr-img.jpg) no-repeat center/cover;
+}
+
+.bnr .container {
+  gap: 20px;
+}
+
+.bnr-ttl {
+  font-size: 35px;
+}
+
+.bnr p {
+  width: 30%;
+}
+
+.btn-wpr {
+  gap: 10px;
+}
+
+.learn-btn {
+  color: var(--primary);
+}
+
+/* information */
+.info .container {
+  background-color: var(--second);
+  color: var(--font-color-2);
+}
+
+.content-wpr {
+  width: 33.33%;
+  padding: 50px;
+  gap: 20px;
+}
+
+.open-time p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.open-time b {
+  color: var(--primary);
+  font-weight: normal;
+}
+
+.emergency a {
+  width: 100%;
+  padding-bottom: 5px;
+  color: var(--font-color-2);
+  font-size: 20px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.emergency i {
+  color: var(--primary);
+}
+
+/* Service */
+.service {
+  padding:40px 0 80px;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.service-list {
+  margin-top: 60px;
+}
+
+.service-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* Practitioners */
+.practitioner {
+  padding: 60px 0;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.practitioner-wpr p:first-child {
+  padding: 20px;
+}
+
+.practitioner-wpr > div {
+  width: 50%;
+}
+
+.practitioner-wpr > div:first-child {
+  gap: 30px;
+}
+
+.profile-wpr {
+  width: 100%;
+  padding: 40px;
+  background-color: var(--second);
+  color: var(--font-color-2);
+  gap: 40px;
+}
+
+.profile-slider {
+  position: relative;
+  width: 100%;
+}
+
+.profile {
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.role {
+  color: var(--primary);
+  font-size: 13px;
+}
+
+.profile-name {
+  font-size: 35px;
+}
+
+.profile p {
+  width: 70%;
+}
+
+.profile-slider a {
+  margin-top: 40px;
+}
+
+.profile-slider .slick-arrow {
+  position: absolute;
+  bottom: -34%;
+  background-color: var(--blank);
+  z-index: 1;
+  border: none;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.profile-slider .slick-prev {
+  right: -3%;
+}
+
+.profile-slider .slick-next {
+  right: -20%;
+}
+
+.profile-slider .slick-dots {
+  display: flex;
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  gap: 20px;
+}
+
+.profile-slider .slick-dots button {
+  width: 3px;
+  font-size: 0;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: none;
+}
+
+.profile-slider .slick-dots .slick-active button {
+  width: 8px;
+  background-color: var(--primary);
+}
+
+.img-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-img {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-slider .slick-list,
+.img-slider .slick-track {
+  height: 100%;
+}
+
+/* About */
+.about {
+  padding: 60px 0;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.about .container {
+  gap: 20px;
+}
+
+.about .ttl b {
+  color: var(--primary);
+}
+
+.about .container > p {
+  width: 50%;
+}
+
+.tab-list {
+  position: relative;
+  justify-content: space-between;
+}
+
+.tab-list .line {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  border: 0.5px  solid var(--line-color);
+}
+
+.tab-btn {
+  padding: 10px 40px;
+  border: 1px solid var(--line-color);
+  background-color: #fff;
+  color: var(--font-color-1);
+}
+
+.tab-btn.active {
+  background-color: var(--primary);
+  color: var(--font-color-2);
+}
+
+.tab-wpr {
+  width: 50%;
+}
+
+.tab-video {
+  width: 100%;
+  height: 200px;
+}
+
+.tab-wpr:last-child {
+  background-color: var(--second);
+  color: var(--font-color-2);
+}
+
+.tab-wpr > div {
+  margin: auto 0;
+  padding: 30px;
+  gap: 40px;
+}
+
+.tab-wpr .sub-ttl {
+  padding: 10px 0;
+}
+
+.status-list {
+  flex-wrap: wrap;
+}
+
+.status-list li {
+  width: 50%;
+  padding: 10px 0;
+}
+
+.status-list i {
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+/* Appointmetn */
+.appointment {
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.appointment .container {
+  gap: 30px;
+}
+
+.appointment .container p {
+  width: 50%;
+  margin: auto;
+}
+
+.form-wpr {
+  padding: 40px;
+  background-color: var(--second);
+}
+
+.booking {
+  padding: 40px;
+  background-color: #fff;
+  gap: 40px;
+}
+
+.booking > div {
+  gap: 40px;
+}
+
+.box {
+  display: flex;
+  flex-direction:column;
+  width: 33.33%;
+  text-align: start;
+  gap: 40px;
+}
+
+.booking label {
+  color: var(--form-font);
+  font-size: 13px;
+}
+
+.booking input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.appointment .btn {
+  width: max-content;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
+
+/* Recent */
